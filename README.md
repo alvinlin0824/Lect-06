@@ -1,1 +1,1 @@
-# Lect-06
+# Lect-06 Function
