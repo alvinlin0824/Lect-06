@@ -36,25 +36,27 @@
 using namespace std;
 
 // function
-void code(int n) {
+string code(int n) {
      char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
      int remainder = n % 26;
      int quotient = n / 26;
-     alphabet[remainder];
+     
+     string repeat;
+     // repeat
+     for (int i = 0; i <= quotient; i++)
+     {
+        repeat += alphabet[remainder - 1];
+     }
+    
+     return repeat;
 }
 
 int main(){
-    // char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
     
-    // int i = 1;
-    // // for (int i = 0; i < 4; i++)
-    // // {
-    //      cout << alphabet[i] << endl;
-    // // }
-
-    int n;
-    cin >> n;
+    int arr;
+    cin >> arr;
     // call by address
-    cout << char(n) << endl;
+    cout << code(arr);
     return 0;
 }
+
